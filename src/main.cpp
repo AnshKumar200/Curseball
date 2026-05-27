@@ -1,13 +1,18 @@
+#include "../include/game.h"
 #include <raylib.h>
 
 int main(void) {
-    InitWindow(800, 800, "Curseball");
+    InitWindow(900, 900, "Curseball");
     SetTargetFPS(60);
 
+    Game game = Game();
+
     while (!WindowShouldClose()) {
+        game.Update();
+
         BeginDrawing();
-        DrawText("Curseball", 10, 10, 20, BLACK);
         ClearBackground(WHITE);
+        game.Draw();
         EndDrawing();
     }
     CloseWindow();
