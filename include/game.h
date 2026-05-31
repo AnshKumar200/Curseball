@@ -1,5 +1,6 @@
 #pragma once
 
+#include "ball.h"
 #include "player.h"
 #include <vector>
 
@@ -11,6 +12,7 @@ class Game {
 
   private:
     std::vector<Player> players;
+    std::vector<Ball> balls;
 
     float worldWidth;
     float worldHeight;

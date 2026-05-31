@@ -3,7 +3,7 @@
 
 Game::Game() {
     worldWidth = 800;
-    worldHeight = 300;
+    worldHeight = 400;
 
     players.push_back(Player(1));
 }
